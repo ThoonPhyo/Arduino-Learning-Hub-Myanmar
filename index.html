@@ -47,9 +47,11 @@
   </head>
   <body>
     <!-- nav bar section -->
-    <nav class="navbar navbar-expand-lg border-bottom">
+    <nav
+      class="navbar navbar-expand-lg sticky-top border-bottom border-top top_nav_bar"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand ps-3" href="index.html">
+        <a class="navbar-brand ps-3" href="#">
           <!-- icon  -->
           <img
             src="images/web_logo_ofc - Copy.png"
@@ -72,6 +74,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+            <b>Tutorials</b>
             <!-- nav tab-1 -->
             <li class="nav-item ms-3">
               <a class="nav-link" href="arduino.html">
@@ -149,7 +152,9 @@
     <div class="web_page">
       <!-- page header -->
       <header class="page_header">
-        <h1 class="page_title">Learn Electronics</h1>
+        <h1 class="page_title animate__animated animate__bounce">
+          Learn Electronics
+        </h1>
         <p class="msg">Quick, easy and to the point!</p>
       </header>
 
@@ -173,7 +178,7 @@
 
                 <a
                   href="arduino.html"
-                  class="btn btn-secondary align-text-center"
+                  class="btn btn-secondary text-uppercase align-text-center card_btn"
                 >
                   Explore
                   <i class="fa-solid fa-circle-chevron-right"></i>
@@ -195,7 +200,7 @@
 
                 <a
                   href="sensors.html"
-                  class="btn btn-secondary align-text-center"
+                  class="btn btn-secondary text-uppercase align-text-center card_btn"
                 >
                   Explore
                   <i class="fa-solid fa-circle-chevron-right"></i>
@@ -217,7 +222,7 @@
 
                 <a
                   href="modules.html"
-                  class="btn btn-secondary align-text-center"
+                  class="btn btn-secondary text-uppercase align-text-center card_btn"
                 >
                   Explore
                   <i class="fa-solid fa-circle-chevron-right"></i>
@@ -229,15 +234,17 @@
             <div class="card clearfix m-2">
               <div class="card-body my-5 mx-2">
                 <h5 class="h2 card-title">Basic Electronics</h5>
+
                 <!-- icon image -->
                 <img src="images/card_4 (1).png" class="card_image" alt="..." />
                 <p>
                   Build a strong foundation in electronics, including
                   components, circuits, and essential electrical concepts.
                 </p>
+
                 <a
                   href="electronics.html"
-                  class="btn btn-secondary align-text-center"
+                  class="btn btn-secondary text-uppercase align-text-center card_btn"
                 >
                   Explore
                   <i class="fa-solid fa-circle-chevron-right"></i>
@@ -248,6 +255,202 @@
         </div>
       </section>
     </div>
+
+    <!-- footer section -->
+    <footer my-5 py-3>
+      <!-- footer nav bar  -->
+      <div class="d-flex align-items-center footer_navbar">
+        <div class="me-auto mx-4">
+          <img src="images/logo.png" alt="" class="footer-logo" />
+        </div>
+        <div class="ms-auto up-arrow-box p-3">
+          <a href="#" class="btn align-text-center">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+            <span class="d-none d-md-inline"> Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- footer content -->
+      <div class="footer-container">
+        <!-- contact section -->
+        <div class="row footer-contact py-3 px-5">
+          <!-- social icons -->
+          <div class="col-lg-9 text-start text-md-start my-4">
+            <h6 class="text-uppercase">Follow Us</h6>
+            <a href="#" class="text-dark"
+              ><i class="bi bi-facebook me-3 fs-2"></i
+            ></a>
+            <a href="#" class="text-dark"
+              ><i class="bi bi-github me-3 fs-2"></i
+            ></a>
+            <a href="#" class="text-dark"
+              ><i class="bi bi-pinterest me-3 fs-2"></i
+            ></a>
+            <a href="#" class="text-dark"
+              ><i class="bi bi-youtube me-3 fs-2"></i
+            ></a>
+          </div>
+
+          <!-- footer form -->
+          <div
+            class="col-lg-3 text-end justify-content-center my-4 footer-form"
+          >
+            <div class="row text-start">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-uppercase"
+                >Email address</label
+              >
+            </div>
+            <div class="row text-start">
+              <div class="col-lg-8 g-2">
+                <input
+                  type="email"
+                  class="form-control email-input-box"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="col-lg-4 g-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary px-3 text-uppercase form-submit"
+                  value="Submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer about-us -->
+        <div class="row py-3 px-5 footer-about-us">
+          <div class="col-md-4 text-center text-md-start">
+            <h4>Arduino Learning Hub MM</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >what We Offer</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Become a Partner</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center text-md-start">
+            <h4>Community</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Mentees</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Partners</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Tech Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Teaching Centers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center text-md-start">
+            <h4>More</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Terms</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Privacy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Help</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Accesibility</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer ending  -->
+        <div class="row py-2 px-5 footer-ending">
+          <div class="col-md-5 text-center text-lg-start">
+            <span>&copy; 2026 Arduino Learning Hub MM</span>
+          </div>
+
+          <div class="col-md-7">
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-lg-end"
+            >
+              <div class="me-4 fs-6">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >About</a
+                >
+              </div>
+              <div class="me-4 fs-6">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Courses</a
+                >
+              </div>
+              <div class="me-4 fs-6">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Blog</a
+                >
+              </div>
+              <div class="me-4 fs-6">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Contact</a
+                >
+              </div>
+              <div class="fs-6">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Admin</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- link with fontawsome js cdn -->
     <script
