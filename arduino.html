@@ -12,8 +12,11 @@
       type="image/x-icon"
     />
 
-    <!-- link with style.css -->
+    <!-- Global CSS (used by all pages) -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Arduino page specific CSS -->
+    <link rel="stylesheet" href="arduino.css" />
 
     <!-- bootstrap css cdn -->
     <link
@@ -144,6 +147,287 @@
         </div>
       </div>
     </nav>
+
+    <!-- Arduino Page sections -->
+
+    <!-- header -->
+    <header>
+      <div class="page-header text-center py-5 px-2 px-xxl-5">
+        <h1 class="fw-bold">Introduction to Arduino</h1>
+        <p class="text-muted col-md-8 mx-auto mb-md-5">
+          Learn Arduino step by step with clear tutorials, pinouts, wiring
+          diagrams, and easy-to-follow code examples.
+        </p>
+
+        <!-- card-nav tabs bar-->
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <!-- All tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+
+          <!-- Introduction tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Introduction
+            </button>
+          </li>
+
+          <!-- Software tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Software
+            </button>
+          </li>
+
+          <!-- Programming tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Programming
+            </button>
+          </li>
+
+          <!-- Basic Projects tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Basic Projects
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- nav tabs' contents -->
+    <div class="tab-content px-4 px-md-5 py-5" id="pills-tabContent">
+      <!-- all content -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-all"
+        role="tabpanel"
+        aria-labelledby="pills-all-tab"
+        tabindex="0"
+      >
+        <h2 class="d-flex flex-wrap section-title text-start mb-5">
+          Introduction
+        </h2>
+
+        <!-- card container  -->
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+          <!-- card-1  -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  1️⃣ What is Arduino?
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  Arduino is an open-source electronics platform to build
+                  interactive projects with hardware and software.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  2️⃣ Arduino Boards
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  Arduino boards come in different types and sizes, each
+                  designed for specific projects and power requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  3️⃣ Microcontroller Basics
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  The microcontroller is the brain of Arduino that processes
+                  data and controls connected components.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  4️⃣ Power & Voltage
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  Learn how Arduino is powered safely using USB, adapters, or
+                  external power sources.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-5 -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  5️⃣ Pins Explained
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  Arduino pins are used to connect sensors, modules, and output
+                  devices in your projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-6 -->
+          <div class="col text-center">
+            <div
+              class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+            >
+              <img
+                src="https://www.datocms-assets.com/42182/1581423993-arduino-uno-03.png?auto=format&max-w=1600"
+                class="card-img-top sm-img-fluid rounded-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-start text-uppercase">
+                  6️⃣ Arduino IDE
+                </h5>
+                <p class="card-text text-start fs-6 fw-light text-muted">
+                  Arduino IDE is the software used to write, compile, and upload
+                  code to Arduino boards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="pills-disabled"
+        role="tabpanel"
+        aria-labelledby="pills-disabled-tab"
+        tabindex="0"
+      >
+        ...
+      </div>
+    </div>
 
     <!-- link with fontawsome js cdn -->
     <script
