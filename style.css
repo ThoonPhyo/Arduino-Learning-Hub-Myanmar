@@ -21,7 +21,7 @@ body {
 
 /* nav section */
 .top_nav_bar {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   font-size: 1em;
   background-image:
     url(images/nav_bg_nobg.png), url(images/nav_bg_nobg.png),
@@ -41,7 +41,7 @@ body {
 }
 
 /* nav link tabs' header  */
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .navbar b {
     display: none !important;
     margin: 6px !important;
@@ -74,11 +74,14 @@ body {
 }
 
 /* no web page backgroud for mobile */
-@media (max-width: 767.98px) {
-  .web_page,
-  .navbar {
+@media (max-width: 990px) {
+  .web_page {
     background: none !important;
     background-color: #fff !important;
+  }
+  .navbar {
+    background: none !important;
+    background-color: #f8f9fa !important;
     z-index: 99999 !important;
   }
 }
