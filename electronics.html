@@ -12,8 +12,11 @@
       type="image/x-icon"
     />
 
-    <!-- link with style.css -->
+    <!-- Global CSS (used by all pages) -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Arduino page specific CSS -->
+    <link rel="stylesheet" href="webpagestyles.css" />
 
     <!-- bootstrap css cdn -->
     <link
@@ -144,6 +147,877 @@
         </div>
       </div>
     </nav>
+
+    <!-- Basic Electronic Page sections -->
+
+    <!-- header -->
+    <header>
+      <div class="page-header text-center py-5 px-2 px-xxl-5">
+        <h1 class="fw-bold">Beginner Electronics for Arduino</h1>
+        <p class="text-muted col-md-8 mx-auto mb-md-5">
+          Learn core electronic components and circuits used in Arduino and IoT
+          projects. This guide helps beginners understand parts like resistors,
+          LEDs, sensors, and how they work together in real circuits — to build
+          useful projects step by step.
+        </p>
+
+        <!-- card-nav tabs bar-->
+        <ul
+          class="nav nav-pills mb-3 justify-content-center"
+          id="pills-tab"
+          role="tablist"
+        >
+          <!-- All tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+
+          <!-- Passive Components tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-passive-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-passive"
+              type="button"
+              role="tab"
+              aria-controls="pills-passive"
+              aria-selected="true"
+            >
+              Passive Components
+            </button>
+          </li>
+
+          <!-- Active Components tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-active-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-active"
+              type="button"
+              role="tab"
+              aria-controls="pills-active"
+              aria-selected="true"
+            >
+              Active Components
+            </button>
+          </li>
+
+          <!-- Power tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-power-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-power"
+              type="button"
+              role="tab"
+              aria-controls="pills-power"
+              aria-selected="true"
+            >
+              Power
+            </button>
+          </li>
+
+          <!-- Others tab -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border rounded-5 my-1 mx-1 btn btn-light opacity-76"
+              id="pills-other-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-other"
+              type="button"
+              role="tab"
+              aria-controls="pills-other"
+              aria-selected="true"
+            >
+              Others
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- nav tabs' contents -->
+    <div class="tab-content px-4 px-md-5 py-5" id="pills-tabContent">
+      <!-- all tab content -->
+      <div
+        class="tab-pane fade show active"
+        id="pills-all"
+        role="tabpanel"
+        aria-labelledby="pills-all-tab"
+        tabindex="0"
+      >
+        <!-- Passive Components section  -->
+        <section class="mb-5 display-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Passive Components
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/resistor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Resistor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Limits electric current to protect components and control
+                    voltage in circuits.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/capacitor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Capacitor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Stores electrical energy temporarily to smooth voltage and
+                    filter signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/potentionmeter.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Potentiometer</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Adjusts resistance manually to control voltage, current, or
+                    signal levels in a circuit.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Active Components section -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Active Components
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/LED.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">LED</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Emits light when current flows and is used for indicators
+                    and displays.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/diode.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Diode</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Allows current to flow in one direction and protects
+                    electronic circuits.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/transistor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Transistor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Works as a switch or amplifier to control electronic
+                    signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Power section -->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">Power</h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/Vregulator.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Voltage Regulator</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Maintains a stable output voltage to protect sensitive
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/battery.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Battery</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Supplies electrical energy to power electronic circuits and
+                    devices.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/Powersupply.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Power Supply Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Converts and distributes electrical power safely to circuit
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other section -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">Others</h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/breadboard.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Breadboard</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Used to build and test circuits without soldering electronic
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/wire.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Jumper Wires</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Connect electronic components together during circuit
+                    prototyping.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/switch.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Switch</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Opens or closes a circuit to control the flow of
+                    electricity.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/multimeter.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Multimeter</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measures voltage, current, and resistance in electronic
+                    circuits for testing and troubleshooting.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Passive Components tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-passive"
+        role="tabpanel"
+        aria-labelledby="pills-passive-tab"
+        tabindex="0"
+      >
+        <!-- Passive Components content -->
+        <section class="mb-5 display-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Passive Components
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/resistor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Resistor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Limits electric current to protect components and control
+                    voltage in circuits.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/capacitor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Capacitor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Stores electrical energy temporarily to smooth voltage and
+                    filter signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/potentionmeter.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Potentiometer</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Adjusts resistance manually to control voltage, current, or
+                    signal levels in a circuit.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Active Components tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-active"
+        role="tabpanel"
+        aria-labelledby="pills-active-tab"
+        tabindex="0"
+      >
+        <!-- Active Components content -->
+        <section class="mb-5 motion-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">
+            Active Components
+          </h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/LED.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">LED</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Emits light when current flows and is used for indicators
+                    and displays.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/diode.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Diode</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Allows current to flow in one direction and protects
+                    electronic circuits.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3  -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/transistor.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Transistor</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Works as a switch or amplifier to control electronic
+                    signals.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Power tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-power"
+        role="tabpanel"
+        aria-labelledby="pills-power-tab"
+        tabindex="0"
+      >
+        <!-- Power content -->
+        <section class="mb-5 soil-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">Power</h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/Vregulator.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Voltage Regulator</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Maintains a stable output voltage to protect sensitive
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/battery.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Battery</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Supplies electrical energy to power electronic circuits and
+                    devices.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/Powersupply.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Power Supply Module</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Converts and distributes electrical power safely to circuit
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Other tab content -->
+      <div
+        class="tab-pane fade"
+        id="pills-other"
+        role="tabpanel"
+        aria-labelledby="pills-other-tab"
+        tabindex="0"
+      >
+        <!-- Other content -->
+        <section class="mb-5 basic-pj-section-all">
+          <h2 class="d-flex flex-wrap section-title text-start mb-5">Others</h2>
+
+          <!-- card container  -->
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 px-sm-4">
+            <!-- card-1 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/breadboard.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Breadboard</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Used to build and test circuits without soldering electronic
+                    components.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/wire.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Jumper Wires</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Connect electronic components together during circuit
+                    prototyping.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/switch.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Switch</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Opens or closes a circuit to control the flow of
+                    electricity.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="col text-center">
+              <div
+                class="card border-light px-md-5 py-md-4 px-4 py-3 text-center arduino-card"
+              >
+                <img
+                  src="images/electronics/multimeter.png"
+                  class="card-img-top sm-img-fluid rounded-3"
+                  alt="..."
+                />
+                <div class="card-body text-start">
+                  <h5 class="card-title text-start">Multimeter</h5>
+                  <p class="card-text text-start fs-6 fw-light text-muted">
+                    Measures voltage, current, and resistance in electronic
+                    circuits for testing and troubleshooting.
+                  </p>
+                  <a href="" class="btn btn-primary text-uppercase"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="row py-3 px-5 footer-ending">
+        <div
+          class="col-md-5 text-center text-lg-start fs-6 fw-light text-muted fw-bold"
+        >
+          <span>&copy; 2026 Arduino Learning Hub MM</span>
+        </div>
+
+        <div class="col-md-7">
+          <div
+            class="d-flex flex-wrap justify-content-center justify-content-lg-end"
+          >
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >About</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Courses</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Blog</a
+              >
+            </div>
+            <div class="me-4 fs-6">
+              <a href="#" class="text-decoration-none text-body-secondary"
+                >Contact</a
+              >
+            </div>
+            <div class="fs-6">
+              <a
+                href="#"
+                class="text-decoration-none text-body-secondary fw-bold"
+                >Admin</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- up to top bottom -->
+      <!-- d-none  d-md-flex -->
+      <a href="#" class="upt-btn fs-1 d-none d-md-flex py-md-1">
+        <i class="bi bi-arrow-up-circle-fill"></i
+      ></a>
+    </footer>
 
     <!-- link with fontawsome js cdn -->
     <script
